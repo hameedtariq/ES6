@@ -43,8 +43,18 @@ function restOperator(message, ...args) {
         console.log(msg);
     }
 }
-restOperator('Hello world', 'green', 'blue', 'red');
+// restOperator('Hello world', 'green', 'blue', 'red');
 // spread operator
 const spreadColors = ['green', 'blue', 'red'];
 restOperator('Hello world', ...spreadColors);
+// object literals
+const ln = 'last name';
+const person = {
+    // can define methods this way
+    breaths() {
+        console.log('Breathing');
+    },
+    // can use variable values as keys
+    [ln]: 'Tariq',
+};
 //# sourceMappingURL=1.js.map
