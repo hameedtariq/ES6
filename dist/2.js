@@ -25,5 +25,10 @@ User.prototype.login = function () {
 let user = new User('Hello', 'Mello');
 
 user.login();
+// protype' inheritance
+function Admin(...args: [string, string]) {
+  User.apply(this, args);
+  this.role = 'super admin';
+}
 */
 //# sourceMappingURL=2.js.map
