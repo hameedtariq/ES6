@@ -42,3 +42,14 @@ function sum(a = 10, b = a * 0.1) {
 }
 
 // sum(20, 20);
+
+// working with rest operator
+function restOperator(message: string, ...args: string[]) {
+  console.log(message);
+
+  for (const msg of args) {
+    console.log(msg);
+  }
+}
+
+restOperator('Hello world', 'green', 'blue', 'red');

@@ -36,4 +36,12 @@ function sum(a = 10, b = a * 0.1) {
     return a + b;
 }
 // sum(20, 20);
+// working with rest operator
+function restOperator(message, ...args) {
+    console.log(message);
+    for (const msg of args) {
+        console.log(msg);
+    }
+}
+restOperator('Hello world', 'green', 'blue', 'red');
 //# sourceMappingURL=1.js.map
