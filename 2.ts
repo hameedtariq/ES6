@@ -26,9 +26,10 @@ User.prototype.login = function () {
 let user = new User('Hello', 'Mello');
 
 user.login();
-// protype' inheritance
+// prototype' inheritance
 function Admin(...args: [string, string]) {
   User.apply(this, args);
   this.role = 'super admin';
 }
+Admin.prototype = Object.create(User.prototype);
 */
