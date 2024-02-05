@@ -53,3 +53,8 @@ function restOperator(message: string, ...args: string[]) {
 }
 
 restOperator('Hello world', 'green', 'blue', 'red');
+
+// spread operator
+const spreadColors = ['green', 'blue', 'red'];
+
+restOperator('Hello world', ...spreadColors);

@@ -44,4 +44,7 @@ function restOperator(message, ...args) {
     }
 }
 restOperator('Hello world', 'green', 'blue', 'red');
+// spread operator
+const spreadColors = ['green', 'blue', 'red'];
+restOperator('Hello world', ...spreadColors);
 //# sourceMappingURL=1.js.map
